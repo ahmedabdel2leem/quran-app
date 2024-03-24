@@ -8,13 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      content: {
+        'arrowDownIcon': 'url("../assets/arcticons_al-quran-indonesia.png")',
+        // 'arrowUpIcon': 'url("../src/arrow-up-icon.svg")',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors:{
+        primary:"#3AB6AA",
+        secondary:"#A4C7C4",
+        dark:"#2D4A7C",
+        light: "#EFF9F9"
+      },
     },
   },
+  
+  
   plugins: [],
 };
 export default config;
