@@ -7,10 +7,12 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily:{
+      thuluth_ : ["var(--font-thuluth)"]
+    },
     extend: {
       content: {
-        'arrowDownIcon': 'url("../assets/arcticons_al-quran-indonesia.png")',
-        // 'arrowUpIcon': 'url("../src/arrow-up-icon.svg")',
+        'search': 'url(https://cdn.iconscout.com/icon/free/png-512/free-search-1436-527970.png?f=webp&w=25)',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -1,8 +1,11 @@
-import Image from "next/image";
+import Jusz from "@/Components/Juzs/Jusz";
+import Surhs from "@/Components/Surhs/Surhs";
+import JuzsSurhsWrapper from './../Components/JuzsSurhsWrapper/JuzsSurhsWrapper';
 
 export default function Home() {
-  return <>
-    home
-  </>  
+
+return<>
+<JuzsSurhsWrapper/>
+</>
 
 }

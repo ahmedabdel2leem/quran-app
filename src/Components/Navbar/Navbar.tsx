@@ -2,16 +2,18 @@
 import { useState } from "react"
 import logo from '../../assets/arcticons_al-quran-indonesia.png'
 import Image from "next/image"
+import Link from "next/link"
 type Props = {
 
 }
 
-function Header({ }: Props) {
+function Navbar({ }: Props) {
+  
   const [profile, setProfile] = useState(false)
   const [menu, setMenu] = useState(false)
   return <>
-    <nav className="navbar bg-white fixed w-full">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav className="navbar bg-white fixed w-full z-[999]">
+      <div className="mx-auto w-full px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
@@ -40,14 +42,14 @@ function Header({ }: Props) {
             <div className="hidden sm:ml-16 mr-11 sm:block">
               <div className="flex space-x-4">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <a href="#" className="nav-link rounded-md px-3 py-2 text-sm font-medium">Home</a>
-                <a href="#" className="nav-link rounded-md px-3 py-2 text-sm font-medium">Reciters</a>
-                <a href="#" className="nav-link rounded-md px-3 py-2 text-sm font-medium">Podcast</a>
+                <Link href="/" className="nav-link rounded-md px-3 py-2 text-sm font-medium">Home</Link>
+                <Link href="/reciters" className="nav-link rounded-md px-3 py-2 text-sm font-medium">Reciters</Link>
+                <Link href="#" className="nav-link rounded-md px-3 py-2 text-sm font-medium">Podcast</Link>
               </div>
             </div>
           </div>
           {/* input  */}
-          <div className="hidden lg:block input w-full  flex-1 relative  before:transform before:top-[60%] before:left-1 before:-translate-y-1/2 before:content-[url('https://cdn.iconscout.com/icon/free/png-512/free-search-1436-527970.png?f=webp&w=25')] before:max-w-5 before:inline-block before:absolute ">
+          <div className="hidden lg:block input w-full  flex-1 relative  before:transform before:top-[60%] before:left-1 before:-translate-y-1/2 before:content-search before:max-w-5 before:inline-block before:absolute ">
             <input className="w-full py-1 border border-2 focus:outline-0 pl-6 bg-slate-50 rounded-lg" type="text" />
           </div>
               {/* sittengs and notification */}
@@ -99,4 +101,4 @@ function Header({ }: Props) {
   </>
 }
 
-export default Header;
+export default Navbar;
