@@ -1,23 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-dsfsdsf
-.input::before{
-  width: 10px;
+
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+.rakkas-regular {
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-#mobile-menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-  }
 
-  #mobile-menu.h-full{
-   max-height: 1000px;
-  }
 
-  .navbar .nav-link{
-    @apply text-black hover:bg-primary hover:text-white
-  }
-  .navbar .nav-link:hover{
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+.bg-white {
+  background-color: rgb(107, 244, 230);
+}
+.active {
+  background-color: rgb(43, 137, 128); 
+}
 
-  }
+
+
+
+
+
+
+
+
+
+/* <div className='absolute top-[20%] left-[4%] text-white w-[30%] bg-slate-950/20 rounded-[10px] p-7 text-xl rakkas-regular '>
+            <h3 className='mb-5'>ramadan journey 2</h3>
+            <p>In this great month, we witness the meanings of faith in our souls. The month of Ramadan is an opportunity for us
+              to renew our faith and prepare to complete the Quran in this holy month. We have prepared this plan so that you
+              can complete the Qur’an within 30 days.
+            </p>
+             <button className='bg-[#3AB6AA] text-white rounded-[10px] px-5 py-3 text-[25px] mt-4'>start</button>
+          </div> */
+
+
+
+
+
+
+
+
+
+

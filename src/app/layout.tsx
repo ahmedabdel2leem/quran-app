@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/Components/Navbar/Navbar";
+
 import Footer from "@/Components/Footer/Footer";
+
+import { EmblaCarousel } from "./HeroSection/Header";
+// import Header from "@/Components/Navbar/Navbar";
+import { EmblaCarouselReading } from "@/Components/Reading/Reading";
+import Translate from "@/Components/Translate/Translate";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
+     {/* <Header/> */}
+        <EmblaCarousel/>
+        <Translate/>
+        <EmblaCarouselReading/>
+        
         {children}
         <Footer/>
         </body>

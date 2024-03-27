@@ -10,7 +10,7 @@ function Header({ }: Props) {
   const [profile, setProfile] = useState(false)
   const [menu, setMenu] = useState(false)
   return <>
-    <nav className="navbar bg-white fixed w-full">
+    <nav className="navbar bg-black fixed w-full z-10">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center ">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -50,6 +50,7 @@ function Header({ }: Props) {
           <div className="hidden lg:block input w-full  flex-1 relative  before:transform before:top-[60%] before:left-1 before:-translate-y-1/2 before:content-[url('https://cdn.iconscout.com/icon/free/png-512/free-search-1436-527970.png?f=webp&w=25')] before:max-w-5 before:inline-block before:absolute ">
             <input className="w-full py-1 border border-2 focus:outline-0 pl-6 bg-slate-50 rounded-lg" type="text" />
           </div>
+          
               {/* sittengs and notification */}
           <div className="absolute inset-y-0 right-0 ml-auto flex items-center pr-2 sm:static sm:inset-auto  sm:ml-16 sm:pr-0">
             <button type="button" className="relative  rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
